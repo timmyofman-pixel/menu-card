@@ -17,3 +17,15 @@ form {
     border-radius: 12px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+textarea {
+    width: 100%;
+}
+
+button {
+    background-color: #a93226;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    color: white
+}
