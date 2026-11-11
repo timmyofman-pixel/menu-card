@@ -11,7 +11,12 @@ console.log(form, input, count, menuText);
 function handleSubmit(event) {
     event.preventDefault();
     let menu = JSON.parse(input.value);
+    console.log(menu);
     count.textContent = "We have " + menu.length + " items in the menu.";
+    menuText.textContent = "";
+    for (let i = 0; i < menu.length; i++) {
+       menuText.textContent = menuText.textContent + menu[i].name + " - $" + menu[i].price + "\n";
 }
+}    
 
 form.addEventListener("submit", handleSubmit);
